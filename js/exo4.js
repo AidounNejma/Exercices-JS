@@ -7,3 +7,16 @@
  * Astuce : on peut avoir un objet de date en faisant : var now = new Date();
  * https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Date
  */
+
+function date() {
+    var currentTime = new Date(),
+        hours = currentTime.getHours(),
+        minutes = currentTime.getMinutes(),
+        seconds = currentTime.getSeconds(),
+        text = (hours + ':' + minutes + ':' + seconds);
+    document.getElementById('container').innerHTML = text;
+}
+
+
+setInterval(date, 1000);
+

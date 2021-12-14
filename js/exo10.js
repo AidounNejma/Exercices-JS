@@ -33,10 +33,13 @@
  */
 
 function suite(number) {
-
+    if(number < 2){
+        return number
+    }
+    return suite(number -1) + suite(number -2)
 }
 
-
+console.log(suite(40))
 
 
 

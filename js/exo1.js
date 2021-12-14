@@ -5,3 +5,16 @@
  * 3. Additionner les deux nombres
  * 4. Afficher le résultat dans #result
  */
+
+
+function onLoad(){
+    let question1 = prompt ( "Rentre le premier nombre"); 
+    let question2 = prompt ("Rentre le Second nombre");
+    let nbr1=new Number(question1);
+    let nbr2=new Number(question2);
+    let result = parseInt(nbr1 + nbr2);
+    document.getElementById('result').innerHTML = result
+    
+}
+
+onLoad()

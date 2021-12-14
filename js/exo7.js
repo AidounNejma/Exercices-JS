@@ -10,11 +10,17 @@
  *  - truc : false
  */
 
-function getExtension(str) {
+let str;
 
+function getExtension(str){
+    if(str.indexOf(".") === -1){
+        return false
+    }   
+    else{
+        let extension = str.split('.').pop()
+        return extension
+    }
 }
-
-
 
 
 

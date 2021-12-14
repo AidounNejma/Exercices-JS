@@ -12,7 +12,26 @@
 
 
 function sum(arr) {
-
+    let Total=0;
+    let Temp = 0;
+    if (arr == 0 ){
+        return 0;
+    }
+    else {
+        for (let i=0 ; i< arr.length ; i++) {
+            if (typeof(arr[i]) == 'string' ) {
+                Temp = 0;
+                Total =  parseInt(Total) + parseInt(Temp)
+            }
+            else {
+            Temp =  arr[i] 
+            Total = parseInt(Total) + parseInt(Temp)
+            
+            }
+            console.log(Total)
+        }
+}
+return Total
 }
 
 

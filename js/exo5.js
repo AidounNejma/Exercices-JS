@@ -4,12 +4,15 @@
  * Le doubler, et le retourner
  */
 
-function doubleInt(int) {
 
+let int;
+function doubleInt(int) {
+    let doubleInt = parseInt(int) * parseInt(2)
+    return doubleInt
 }
 
 
-
+doubleInt(int)
 
 
 
